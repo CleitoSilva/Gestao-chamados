@@ -1,0 +1,13 @@
+export * as AreaService from './Area'
+export * as SubAreaService from './SubÁrea'
+export * as EmpresaService from './Empresa'
+export * as CategoriaColaboradorService from './CategoriaColaborador'
+export * as CategoriaTecnincaService from './CategoriaTecnica'
+export * as ColaboradorService from './Colaborador'
+export * as ComponenteService from './Componente'
+export * as LinhaService from './Linha'
+export * as MaquinaService from './Máquina'
+export * as TurnoService from './Turno'
+export * as UsuarioService from './Usuário'
+export * as TicketsService from './Chamado'
+

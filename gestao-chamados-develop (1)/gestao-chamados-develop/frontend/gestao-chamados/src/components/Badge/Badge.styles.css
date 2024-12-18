@@ -1,0 +1,83 @@
+ .badge-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    justify-content: flex-end;
+}
+
+.badge-container .badge{
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge-container .badge.active{
+    background-color: #8FEBFF;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: animacaoFundo 500ms infinite alternate;
+}
+.badge-container .badge.default{
+    background-color: #a1a1a1;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge-container .badge.error{
+    background-color: #ff6a83;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: animacaoFundoError 500ms infinite alternate;
+}
+
+.badge-container .badge.active .badge-overlay{
+ border: 3px solid #8FEBFF;
+}
+
+.badge-container .badge.error .badge-overlay{
+ border: 3px solid #ff6a83;
+}
+.badge-container .badge.default .badge-overlay{
+ border: 3px solid #a1a1a1;
+}
+
+
+@keyframes animacaoFundo {
+    0% {
+      background-color: #7fe8ff; /* Primeira cor */
+    }
+   
+    100% {
+      background-color: #1fddff; /* Volta para a primeira cor */
+    }
+  }
+@keyframes animacaoFundoError{
+    0% {
+      background-color: #ff6a83; /* Primeira cor */
+    }
+   
+    100% {
+      background-color: #fb4160; /* Volta para a primeira cor */
+    }
+  }

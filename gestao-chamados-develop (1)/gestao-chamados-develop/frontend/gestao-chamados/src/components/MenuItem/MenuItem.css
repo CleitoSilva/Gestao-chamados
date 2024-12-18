@@ -1,0 +1,68 @@
+:root {
+  --color-icon-disative: #da87c9; 
+  --color-bg-icon-disative: #5b2ea3;
+  --color-icon-active: white; 
+  --color-bg-icon-active: #45109b;
+  --color-bg-item-active: #e9defa85;
+  --color-bg-item-active-hover: #faf9fc85;
+  --color-bg-item-hover: #fdfcfd54;
+}
+
+button.menu-item {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  background: none;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0);
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0);
+}
+
+button.menu-item span.menu-icon {
+  background: transparent;
+  color: var(--color-icon-disative);
+  display: flex;
+  padding: 5px;
+  border-radius: 4px;
+  transition: ease-in-out all 300ms;
+}
+
+button.menu-item.active {
+  background: var(--color-bg-item-active);
+  color: var(--color-primary-dark);
+  font-weight: 600;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+
+button.menu-item.active span.menu-icon {
+  background: var(--color-primary-dark);
+  color: var(--color-icon-active);
+}
+
+button.menu-item:not(.active):hover {
+  /* transform: translateX(1px); */
+  background: var(--color-bg-item-hover);
+}
+
+button.menu-item.active:hover {
+  background: var(--color-bg-item-active-hover);
+}
+
+nav.menu.collapse button.menu-item {
+  flex-direction: column;
+  font-size: 10px;
+}
+
+nav.menu.collapse button.menu-item span.menu-icon {
+  font-size: 16px;
+}

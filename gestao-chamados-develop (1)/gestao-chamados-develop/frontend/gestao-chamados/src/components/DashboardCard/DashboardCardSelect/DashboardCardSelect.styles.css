@@ -1,0 +1,47 @@
+
+.dashboard-card-header{
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 24px;
+    gap: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: ease-in-out background-color 300ms;
+    color:var(--color-neutral-light);
+  }
+
+.dashboard-card-header:hover{
+    background-color: #ffffff17;
+  }
+
+  .dashboar-card-info {
+    width: 100%;
+    font-size: 20px;
+    color: #000;
+    border-radius: 4px; 
+    width: 60%;
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    background:rgb(0, 89, 255);
+    -webkit-box-shadow: 0px 4px 35px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 4px 35px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 4px 35px 0px rgba(0,0,0,0.25);
+    position: relative;
+  }
+
+  .dashboar-card-info::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    left: 50%;
+    rotate: 45deg;
+    background:rgb(0, 89, 255);
+}

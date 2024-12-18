@@ -1,0 +1,443 @@
+:root {
+  --color-base-input-login: #e4d6d6;
+  --color-bg-input-login: #251b1b;
+  --color-bg-login-button: linear-gradient(135deg, #5A0549 0%, #5760B0 99.90%);
+  --color-bg-login-form: linear-gradient(153deg, #030007 0%, rgba(6, 0, 13, 0.86) 100%);
+}
+
+main.login {
+  height: 100vh;
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+}
+
+main.login div.brand-area {
+  width: 60%;
+  background: #1F1F23;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+main.login div.brand-area h1 {
+  font-size: 80px;
+  position: absolute;
+  margin-left: 5rem;
+  margin-top: -20rem;
+
+  z-index: 1;
+  color: white;
+}
+
+main.login div.brand-area h1::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 110px;
+  height: 5px;
+  background: white;
+}
+
+main.login div.brand-area h1::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 40px;
+  height: 5px;
+  background: white;
+}
+
+main.login section {
+  width: 40%;
+  height: 100%;
+  max-height: 100%;
+  background: var(--color-bg-login-form);
+
+  box-shadow: -5px 0 4px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: auto;
+}
+
+main.login form.login-form {
+  width: 60%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  position: relative;
+
+  padding: 3rem 0;
+}
+
+main.login div.login-text {
+  color: white;
+}
+
+main.login div.login-text h1 {
+  font-size: 3.2vw;
+  margin-bottom: 20px;
+}
+
+main.login div.login-text h2 {
+  font-size: 2.4vw;
+  margin-bottom: 10px;
+}
+
+main.login div.login-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  margin-top: 10px;
+}
+
+main.login div.text-input-container.login label {
+  color: var(--color-base-input-login);
+}
+
+main.login div.text-input-container.login span.input-icon {
+  color: var(--color-base-input-login);
+}
+
+main.login div.text-input-container.login input.text-input {
+  border-color: var(--color-base-input-login);
+  background: var(--color-bg-input-login);
+  color: white;
+  font-size: 14px;
+}
+
+main.login div.text-input-container.login input.text-input:is(:focus,:not(:placeholder-shown)) {
+  outline-color: white;
+}
+
+main.login div.text-input-container.login input.text-input:is(:focus,:not(:placeholder-shown)) + label {
+  color: white;
+  top: -15px;
+  left: -5px;
+  background: transparent;
+}
+
+main.login div.login-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 1rem;
+}
+
+
+
+main.login div.login-buttons button {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+
+  cursor: pointer;
+
+  background: var(--color-bg-login-button);
+}
+
+main.login button[type="button"].back {
+  width: fit-content;
+  font-size: 20px;
+  padding: 10px 1rem;
+
+  position: absolute;
+
+  cursor: pointer;
+  border: none;
+  color: white;
+
+  background: rgba(255, 255, 255, 0.134) ;
+
+  top: 2rem;
+  left: 2rem;
+  z-index: 1;
+
+  border-radius: 8px;
+}
+
+main.login div.login-buttons button:hover {
+  opacity: 0.9;
+}
+
+main.login img.unilever-brand {
+  position: absolute;
+  z-index: 1;
+  bottom: -50px;
+  left: -30px;
+  width: 30%;
+  height: 30%;
+
+  transition: 1s all ease-in-out;
+}
+
+main.login img.rxct-brand {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 20px;
+  width: 10%;
+  height: 10%;
+}
+
+main.login img.backdrop {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+}
+
+
+
+@media (max-height: 700px) {
+  main.login img.unilever-brand {
+    bottom: -40px;
+  }
+
+}
+
+@media (max-height: 600px) {
+  main.login img.unilever-brand {
+    bottom: -30px;
+  }
+}
+
+@media (max-height: 600px) {
+  main.login img.unilever-brand {
+    bottom: -20px;
+  }
+}
+
+@media (max-width: 1100px) {
+  main.login section {
+    width: 60%;
+  }
+
+  main.login div.login-text h1 {
+    font-size: 4vw;
+  }
+  
+  main.login div.login-text h2 {
+    font-size: 3vw;
+  }
+
+  main.login img.unilever-brand {
+    left: -10px;
+  }
+}
+
+@media (max-width: 910px) {
+  main.login section {
+    width: 75%;
+  }
+
+  main.login div.login-text h1 {
+    font-size: 4.5vw;
+  }
+  
+  main.login div.login-text h2 {
+    font-size: 3.2vw;
+  }
+
+  main.login img.unilever-brand {
+    left: 0;
+    width: 50%;
+  }
+} 
+
+@media (max-width: 820px) {
+  main.login section {
+    width: 100%;
+  }
+
+  main.login div.login-text h1 {
+    font-size: 5vw;
+  }
+  
+  main.login div.login-text h2 {
+    font-size: 4vw;
+  }
+
+  main.login img.unilever-brand {
+    left: 0;
+    bottom: -20px;
+  }
+}
+
+@media (max-width: 820px) {
+  main.login section {
+    width: 100%;
+  }
+
+  main.login div.login-text h1 {
+    font-size: 5vw;
+  }
+  
+  main.login div.login-text h2 {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 730px) {
+  main.login section {
+    width: 120%;
+  }
+
+  main.login div.login-text h1 {
+    font-size: 5.4vw;
+  }
+  
+  main.login div.login-text h2 {
+    font-size: 4.2vw;
+  }
+
+  main.login div.brand-area {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    }
+  main.login div.brand-area img {
+    width: 100%;
+    height: 25%;
+    }
+}
+
+@media (max-width: 660px) {
+  main.login section {
+    width: 160%;
+  }
+
+  main.login div.login-text h1 {
+    font-size: 5.6vw;
+  }
+  
+  main.login div.login-text h2 {
+    font-size: 4.6vw;
+  }
+
+  main.login img.unilever-brand {
+    width: 80%;
+  }
+}
+
+@media (max-width: 610px) {
+  main.login section {
+    width: 200%;
+  }
+
+  main.login div.login-text h1 {
+    font-size: 6vw;
+  }
+  
+  main.login div.login-text h2 {
+    font-size: 5vw;
+  }
+
+  main.login img.unilever-brand {
+    width: 100%;
+  }
+}
+
+@media (max-width: 570px) {
+  main.login form.login-form {
+    width: 70%;
+  }
+
+  main.login div.login-text h1 {
+    font-size: 7vw;
+  }
+  
+  main.login div.login-text h2 {
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 500px) {
+
+  main.login div.login-text p {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 440px) {
+  main.login section {
+    width: 250%;
+  }
+
+  main.login button[type="button"].back {
+    left: 4vw;
+  }
+}
+
+@media (max-width: 400px) {
+  main.login button[type="button"].back {
+    left: 3vw;
+  }
+}
+
+@media (max-width: 370px) {
+  main.login button[type="button"].back {
+    left: 2vw;
+  }
+}
+
+@media (max-width: 320px) {
+  main.login form.login-form {
+    width: 80%;
+  }
+
+  main.login button[type="button"].back {
+    left: 1.5vw;
+  }
+}
+
+@media (max-width: 310px) {
+  
+  main.login button[type="button"].back {
+    left: 2vw;
+
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 280px) {
+  
+  main.login button[type="button"].back {
+    left: 1.5vw;
+
+    font-size: 4.5vw;
+  }
+}
+
+@media (max-width: 270px) {
+  
+  main.login button[type="button"].back {
+    left: 1vw;
+
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 230px) {
+  
+  main.login button[type="button"].back {
+    left: 0;
+    width: 100%;
+    font-size: 6vw;
+  }
+}

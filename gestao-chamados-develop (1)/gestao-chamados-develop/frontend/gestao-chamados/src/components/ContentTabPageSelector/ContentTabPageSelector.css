@@ -1,0 +1,200 @@
+.content-tab-page-selector-page{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    position: relative;
+    
+}
+
+.content-tab-page-selector-page .content-tab-page-selector-page-content{
+    display: flex;
+    flex: 1;
+    height: 100%;
+    /* border: 2px solid #0039FF; */
+    background: #ffffff;
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: flex-start !important; 
+    overflow: auto;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.content-tab-page-selector-page .content-tab-page-selector-page-content p {
+    color: rgba(0, 0, 0, 0.60);
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.content-tab-page-selector-page .upload-modal{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-height: 625px;
+    max-width: 654px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+.content-tab-page-selector-page .upload-modal .upload-modal-upload-container{
+    display: flex;
+    flex: 1;
+    border-radius: 16px;
+    background-color: #E5DBDB;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-tab-page-selector-page .upload-modal .input-modal-container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content-tab-page-selector-page .upload-modal .upload-modal-upload-container .upload-button{
+    padding: 25px 20px;
+    background-color: #fff;
+    width: 281px;
+    height: 77px;
+    border-radius: 16px;
+    border: none;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.content-tab-page-selector-page .upload-modal .submit-button-container{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  
+.content-tab-page-selector-page .upload-modal .submit-button-container .submit-button{
+    display: flex;
+    min-width: 137px;
+    padding: 10px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: linear-gradient(265deg, #0F50F5 0%, #3E73FA 43.22%, #7BA0FF 100%);
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .content-tab-page-selector-page .content-tab-page-selector-page-content .image-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content-tab-page-selector-page .content-tab-page-selector-page-content .image-container img{
+    object-fit: cover;
+    width: 99%;
+    height: 99%;
+  }
+  .content-tab-page-selector-page .content-tab-page-selector-page-content .link-container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   flex: 1;
+   height: 100%;
+   width: 100%;
+   gap: 24px;
+  }
+  .content-tab-page-selector-page .content-tab-page-selector-page-content .message-text{
+    color: #868686;
+    font-weight: 36px;
+    font-weight: 500;
+  }
+
+  .content-tab-page-selector-page .content-tab-page-selector-page-content .empty-content-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Embed-container{
+    width: 100%;
+    height: 100%;
+  }
+
+  .content-tab-page-selector-page .content-tab-page-selector-page-content.table{
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+
+  }
+
+  .content-tab-page-selector-page .spreadsheet-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+  }
+  .content-tab-page-selector-page .spreadsheet-container .spreadsheet{
+    max-height: 100%;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+  }
+
+  .content-tab-page-selector-page .spreadsheet-button-container{
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+    max-width: 100%;
+    background-color: #fff;
+    padding: 10px;
+  }
+
+  .content-tab-page-selector-page .spreadsheet-button-container .spreadsheet-button{
+    border: 1px solid #949494;
+      background-color: #c4c4c4;
+      min-width: 100px;
+      color: #000000;
+      padding: 2px;
+      cursor: pointer;
+      transition: ease-in-out background-color 300ms;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+  .content-tab-page-selector-page .spreadsheet-button-container .spreadsheet-button:hover{
+      background-color: #b3b2b2;
+     
+  }

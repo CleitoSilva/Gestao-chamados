@@ -1,0 +1,28 @@
+.dashboard-card-select-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.dashbaord-card-select-modal-container{
+    position: relative;
+    width: 100%;
+}
+
+.dashbaord-card-select-modal-container .dashbaord-card-select-modal-card{
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+
+}
+

@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
+  }
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+;
+  --color-primary-dark: #152666;
+  --color-primary-dark: #182E7B;
+  --color-primary: #0054E3;
+  --color-primary-medium:#033AFF;
+  --color-primary-light: rgb(108, 162, 255);
+  
+  --color-chamado-selector: #7416ED;
+  --color-chamado-selector-strong: #261086;
+  --color-dark-chamado-selector: #001CAD;
+
+  --color-neutral-darkest:#000000;
+  --color-neutral-lightest:#ffffff;
+
+  --color-feedback-warning:#fcaa3e;
+  --color-feedback-warning-dark:#db9334;
+  --color-feedback-error:#DD3737;
+  --color-feedback-error-dark:#c72f2f;
+  --color-feedback-info-light:#65dffa;
+  --color-feedback-info:#58C3DC;
+  --color-feedback-info-dark:#4eb1c7;
+  --color-feedback-success:#0BF979;
+
+}
+
+#root{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  /* background:#0054E3; */
+  background:#ffffff;
+  /* background: linear-gradient(180deg, rgba(0,94,255,1) 35%, rgba(0,34,92,1) 100%); */
+  color: #000000;
+}
+
+html, *{
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}

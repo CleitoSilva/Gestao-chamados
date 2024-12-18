@@ -1,0 +1,64 @@
+:root {
+    --bg-header-table-tag: #1F1F23;
+    --bg-body-table-tag: #2f2f35;
+    --bg-plus-button-tag: #5b2ea3;
+    --bg-refresh-button-tag: #5b2ea3;
+    --bg-plus-button-tag-active: #301458;
+    --bg-plus-button-tag-hover: #753ccf;
+    --bg-refresh-button-tag-hover: #753ccf;
+    --color-delete-tag: #FF3535;
+  }
+
+  
+.action-container-more{
+    background-color: none;
+    display: flex;
+}
+
+.more-container-button{
+    background: #5a2ea2;
+    border-radius: 4px;
+    padding: 12px;
+    display: flex;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    cursor: pointer;
+    z-index: 100;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out background-color 300ms;
+}
+
+.more-container-button:hover{
+    background: #834fd8
+  }
+
+.mobile-more-overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+}
+
+.mobile-select-more{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    user-select: none;
+}
+
+.mobile-select-more{
+    position: absolute;
+    z-index: 9999999;
+    display: inline-flex;
+    flex-direction: column;
+}
+

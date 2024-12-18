@@ -1,0 +1,40 @@
+header.ticket-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem;
+  padding-bottom: 1rem;
+}
+
+header.ticket-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #272727;
+}
+
+header.ticket-header span.ticket-status {
+  padding: 14px 12px;
+  border-radius: 9999px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+header.ticket-header span.ticket-status div.pin {
+  background: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+}
+
+header.ticket-header span.ticket-status p {
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

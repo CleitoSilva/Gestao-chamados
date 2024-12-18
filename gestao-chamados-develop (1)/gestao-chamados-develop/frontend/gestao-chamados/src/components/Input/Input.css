@@ -1,0 +1,66 @@
+.input-container{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+.input-container input {
+    flex-shrink: 0;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e6e6e6;
+    background: linear-gradient(0deg, #182E7B27, #15d4ff36 80%);
+    color: #e6e6e6;
+    padding: 10px 10px;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    outline: #e6e6e6;
+    cursor: pointer;
+    transition: ease-in-out color 300ms, ease-in-out border-color 300ms;
+}
+
+.input-container input[type=number] {
+    -moz-appearance: textfield; /* Firefox */
+  }
+  
+  /* Para Webkit browsers como Chrome e Safari */
+  .input-container input::-webkit-outer-spin-button,
+  .input-container input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+.input-container input::placeholder{
+    color: #ffffff36;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    transition: ease-in-out color 300ms ;
+}
+
+.input-container label{
+    color: #ffffff;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.input-container input:hover {
+    border: 1px solid #ccc5c5;
+    color: #ccc5c5;
+    outline: #ccc5c5;
+}
+
+.input-container input:hover::placeholder {
+    color: #ccc5c5;;
+}
+

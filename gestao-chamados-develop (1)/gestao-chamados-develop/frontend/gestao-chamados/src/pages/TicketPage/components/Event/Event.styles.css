@@ -1,0 +1,85 @@
+:root {
+  --color-event-name: #7B7B7B;
+  --color-event-created-by: #AFAFAF;
+  --bg-aside-icon: #034CCB;
+  --bg-aside-line: #CEE0FF;
+}
+
+div.event-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  padding-left: 3rem;
+
+  position: relative;
+}
+
+ul.events-list li:not(:last-child) div.event-item::before {
+  content: "";
+  position: absolute;
+  left: calc(1.5rem - 1px);
+  width: 2px;
+  height: calc(100% + 2rem);
+  background: var(--bg-aside-line);
+}
+
+div.event-item aside {
+  position: absolute;
+  top: -.25rem;
+  left: .75rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+
+  background: #034CCB;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
+  color: white;
+}
+
+div.event-item aside > * {
+  width: 14px;
+  height: 14px;
+}
+
+div.event-item span.event-item-name {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+div.event-item span.event-item-name h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-event-name);
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+div.event-item span.event-item-name p {
+  font-size: 10px;
+  color: var(--color-event-created-by);
+}
+
+div.event-item span.event-item-ts {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+div.event-item span.event-item-ts h5 {
+  font-size: 10px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+div.event-item p strong {
+  font-weight: 600;
+}

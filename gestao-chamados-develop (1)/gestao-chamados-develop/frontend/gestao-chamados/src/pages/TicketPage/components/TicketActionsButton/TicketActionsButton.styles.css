@@ -1,0 +1,38 @@
+:root {
+  --bg-button-ticket-actions: #757575;
+  --bg-button-ticket-actions-hover: #918a8a;
+}
+
+button.ticket-actions-button {
+  width: 100%;
+  background: var(--bg-button-ticket-actions);
+  border-radius: 16px 16px 0 0;
+  border: none;
+
+  box-shadow: 0 -4px 10px 2px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem 2rem;
+
+  cursor: pointer;
+}
+
+button.ticket-actions-button.fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+button.ticket-actions-button:hover {
+  background: var(--bg-button-ticket-actions-hover);
+}
+
+button.ticket-actions-button p {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}

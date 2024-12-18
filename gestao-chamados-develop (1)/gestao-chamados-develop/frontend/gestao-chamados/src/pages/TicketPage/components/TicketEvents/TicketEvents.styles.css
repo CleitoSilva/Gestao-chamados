@@ -1,0 +1,38 @@
+:root {
+  --bg-list-before: #034CCB;
+  --bg-list-after-line: #CEE0FF;
+}
+
+
+ul.events-list {
+  list-style: none;
+  padding: 2rem 0 6rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  position: relative;
+}
+
+ul.events-list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(1.5rem - 1px);
+  width: 2px;
+  height: 2rem;
+  background: var(--bg-list-after-line);
+}
+
+ul.events-list::after {
+  content: "";
+  position: absolute;
+  top: -.25rem;
+  left: 1rem;
+  width: 1rem;
+  height: .5rem;
+  border-radius: 999px;
+  background: var(--bg-list-before);
+}
+

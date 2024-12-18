@@ -1,0 +1,57 @@
+:root {
+  --bg-action-button: #FF0000;
+  --bg-indicator-ticket: #005EFF;
+}
+
+section.ticket-trash-colaborator-container button.trash {
+  background: var(--bg-action-button);
+}
+
+section.ticket-trash-colaborator-container button.trash .trash-icon path {
+  fill: white;
+}
+
+section.ticket-trash-colaborator-container div.ticket-colaborator-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: .5rem 1rem;
+
+  border-radius: 16px;
+  border: 2px solid rgba(0, 0, 0, 0.1)
+}
+
+section.ticket-trash-colaborator-container div.ticket-colaborator-item span {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+section.ticket-trash-colaborator-container div.ticket-colaborator-item span h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+section.ticket-trash-colaborator-container div.ticket-colaborator-item span p {
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+  background: var(--bg-indicator-ticket);
+  padding: 5px;
+  border-radius: 4px;
+}
+
+section.ticket-trash-colaborator-container article.ticket-trash-colaborator-content {
+  background: white;
+  padding: .5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+
+  max-height: 40vh;
+  height: 40vh;
+}

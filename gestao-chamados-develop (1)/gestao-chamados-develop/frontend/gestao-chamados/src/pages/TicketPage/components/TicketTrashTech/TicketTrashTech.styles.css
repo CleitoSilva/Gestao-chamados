@@ -1,0 +1,56 @@
+:root {
+  --bg-action-button: #FF0000;
+}
+
+section.ticket-trash-tech-container button.trash {
+  background: var(--bg-action-button);
+}
+
+section.ticket-trash-tech-container button.trash .trash-icon path {
+  fill: white;
+}
+
+section.ticket-trash-tech-container div.ticket-technique-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: .5rem 1rem;
+
+  border-radius: 16px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+section.ticket-trash-tech-container div.ticket-technique-item span {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+section.ticket-trash-tech-container div.ticket-technique-item span h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+section.ticket-trash-tech-container div.ticket-technique-item span p {
+  font-size: 8px;
+  font-weight: 600;
+  color: white;
+  background: black;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+section.ticket-trash-tech-container article.ticket-trash-tech-content {
+  background: white;
+  padding: .5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+
+  max-height: 40vh;
+  height: 40vh;
+}

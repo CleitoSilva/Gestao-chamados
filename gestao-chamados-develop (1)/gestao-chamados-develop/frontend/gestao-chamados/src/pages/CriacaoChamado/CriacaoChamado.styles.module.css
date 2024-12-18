@@ -1,0 +1,217 @@
+.config-page {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    -webkit-box-shadow: -2px 4px 10px 0px rgba(0, 0, 0, 0.20);
+    -moz-box-shadow: -2px 4px 10px 0px rgba(0, 0, 0, 0.20);
+    box-shadow: 4px rgba(0, 0, 0, 0.20);
+    overflow: auto;
+    background: linear-gradient(180deg, var(--color-neutral-lightest), var(--color-primary-light), var(--color-dark-chamado-selector));
+    border-radius: 4px;
+}
+
+.config-header {
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    height: 15vh;
+    overflow: auto;
+}
+
+.selected-info {
+    font-size: 2vh;
+    width: 100%;
+    height: 4vh;
+    border: solid 0.5vh black;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.selected-info-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    white-space: nowrap;
+    gap: 12.5vw;
+}
+
+.selected-info-item {
+    width: 6vw;
+    height: 2.5vh;
+    padding: 1.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, var(--color-chamado-selector), var(--color-dark-chamado-selector));
+    border-radius: 0.5vh;
+}
+
+.title-page {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    color: black;
+    font-size: 5.5vh;
+}
+
+.impact-world {
+    color: var(--color-chamado-selector);
+    font-size: 7vh;
+}
+
+/* Renderização dos componentes */
+.content {
+    margin-top: 1.5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+
+.item {
+    color: black;
+    flex: 1 1 calc(10% - 16px);
+    /* Ajusta para ter 10 itens por linha com espaçamento */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* Organiza o conteúdo em coluna */
+    align-items: center;
+    /* Centraliza os itens na coluna */
+    text-align: center;
+    cursor: pointer;
+}
+
+.item img {
+    width: 4vw;
+    height: auto;
+}
+
+.item h3 {
+    margin-top: 0.5vh;
+    /* Espaçamento entre a imagem e o texto */
+}
+
+.back-button {
+    display: none;
+}
+
+.page-content {
+    display: block;
+}
+
+.final-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.sent-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, var(--color-chamado-selector), var(--color-dark-chamado-selector));
+    font-size: 1.5vh;
+    color: var(--color-neutral-lightest);
+    border: none;
+    padding: 1.1vw;
+    width: 20%;
+    height: 1vh;
+    cursor: pointer;
+    border-radius: 0 1vh 1vh 0;
+    box-shadow: 4px 2px 2px black;
+}
+
+.input-ident {
+    padding: 1.1vw;
+    width: 100%;
+    height: 1vh;
+    border: none;
+    border-radius: 1vh 0 0 1vh;
+    box-shadow: 4px 2px 2px black;
+}
+
+.input-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .config-header {
+        display: inline-block;
+        justify-content: center;
+        width: 100%;
+        height: 7vh;
+        overflow: auto;
+    }
+
+    .selected-info {
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 20px;
+    }
+
+    .selected-info-list {
+        gap: 2.5vw;
+    }
+
+    .selected-info-item {
+        width: 14vw;
+        font-size: 1.25vh;
+    }
+
+    .frase-guia-open {
+        margin-left: 6.5%;
+    }
+
+    .title-page {
+        margin-bottom: 8%;
+        font-size: 3vh;
+    }
+
+    .impact-world {
+        font-size: 3.5vh;
+    }
+
+    .item {
+        margin-top: 2%;
+        flex: 1 1 calc(20% - 12px);
+        /* Ajusta para ter 5 itens por linha com espaçamento */
+    }
+
+    .item img {
+        width: 12vw;
+        height: auto;
+        margin-top: 2%;
+    }
+
+    .tabination {
+        display: none;
+    }
+
+    .back-button {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(90deg, var(--color-chamado-selector), var(--color-dark-chamado-selector));
+        font-size: 2.5vh;
+        color: var(--color-neutral-lightest);
+        border: none;
+        border-radius: 1.5vh;
+        padding: 2.25vw;
+        width: 40%;
+        cursor: pointer;
+    }
+}

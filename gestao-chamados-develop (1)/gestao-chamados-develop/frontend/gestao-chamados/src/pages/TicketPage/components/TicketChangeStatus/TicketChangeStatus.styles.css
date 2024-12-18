@@ -1,0 +1,31 @@
+:root {
+  --change-status-colaborator: #005EFF;
+  --border-search-div-colaborator: #c9c9c9;
+  --color-search-colaborator: #5a5a5a;
+}
+
+section.ticket-change-status-container button.btn-change-status {
+  background: #005EFF;
+}
+
+section.ticket-change-status-container button.btn-change-status svg {
+  width: 28px;
+  height: 28px;
+}
+
+section.ticket-change-status-container button.btn-change-status svg path {
+  fill: white;
+}
+
+section.ticket-change-status-container article.ticket-change-status-content {
+  background: white;
+  padding: 1rem;
+
+  max-height: 40vh;
+  height: 40vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}

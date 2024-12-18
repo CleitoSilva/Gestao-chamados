@@ -1,0 +1,88 @@
+:root {
+  --bg-tech-indicator: #005EFF;
+}
+
+ul.ticket-colaborator-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+  height: 36vh;
+  max-height: 36vh;
+
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+ul.ticket-colaborator-list li.ticket-colaborator-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: .5rem 1rem;
+
+  border-radius: 16px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+ul.ticket-colaborator-list li.ticket-colaborator-item span {
+  display: flex;
+  gap: .75rem;
+  align-items: center;
+  justify-content: center;
+}
+
+ul.ticket-colaborator-list li.ticket-colaborator-item span svg {
+  width: 16px;
+  height: 16px;
+}
+
+ul.ticket-colaborator-list li.ticket-colaborator-item span h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+ul.ticket-colaborator-list li.ticket-colaborator-item span p {
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+  background: var(--bg-tech-indicator);
+  padding: 5px;
+  border-radius: 4px;
+}
+
+ul.ticket-colaborator-list li.ticket-colaborator-item button {
+  border: none;
+  background: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+ul.ticket-colaborator-list li.ticket-colaborator-item button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+ul.ticket-colaborator-list li.ticket-colaborator-item button:not(:disabled):hover {
+  opacity: .8;
+}
+
+ul.ticket-colaborator-list li.ticket-colaborator-item button > * {
+  width: 20px;
+  height: 20px;
+}
+
+ul.ticket-colaborator-list li.ticket-colaborator-item button svg path {
+  fill: black;
+}
+
+ul.ticket-colaborator-list li.ticket-colaborator-item div.ticket-colaborator-buttons {
+  display: flex;
+  gap: .75rem;
+  align-items: center;
+}

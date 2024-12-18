@@ -1,0 +1,61 @@
+:root {
+  --border-buttons-area: #B0B0B0;
+}
+
+main.ticket-main-actions article.ticket-actions-content {
+  background: white;
+}
+
+main.ticket-main-actions article.ticket-actions-content div.ticket-actions-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  border-top: 1px solid var(--border-buttons-area);
+}
+
+main.ticket-main-actions article.ticket-actions-content div.ticket-actions-button button {
+  border: none;
+  width: 100%;
+  padding: 1rem 2rem;
+  background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+
+  cursor: pointer;
+}
+
+main.ticket-main-actions article.ticket-actions-content div.ticket-status-buttons {
+  display: flex;
+  gap: .5rem;
+  padding: .5rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+main.ticket-main-actions article.ticket-actions-content div.ticket-status-buttons button.status-button {
+  width: 100%;
+}
+
+main.ticket-main-actions article.ticket-actions-content div.ticket-actions-button button.selected {
+  box-shadow: none;
+}
+
+main.ticket-main-actions article.ticket-actions-content div.ticket-actions-button button:not(.selected):first-child {
+  border-radius: 0 0 8px 0;
+}
+
+main.ticket-main-actions article.ticket-actions-content div.ticket-actions-button button:not(.selected):last-child {
+  border-radius: 0 0 0 8px;
+}
+
+main.ticket-main-actions article.ticket-actions-content div.ticket-actions-button button:not(.selected):hover {
+  background: rgb(233, 233, 233);
+}

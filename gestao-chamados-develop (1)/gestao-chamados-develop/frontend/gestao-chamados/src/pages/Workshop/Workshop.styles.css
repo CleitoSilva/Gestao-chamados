@@ -1,0 +1,123 @@
+.config-page{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    -webkit-box-shadow: -2px 4px 10px 0px rgba(0,0,0,0.20);
+    -moz-box-shadow: -2px 4px 10px 0px rgba(0,0,0,0.20);
+    box-shadow: -2px 4px 10px 0px rgba(0,0,0,0.20);
+    overflow: auto;
+}
+
+.config-header-workshop{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 9vh;
+    overflow: auto;
+}
+
+
+.config-header::-webkit-scrollbar {
+    height:6px;
+    background-color: rgba(255, 255, 255, 0);
+    visibility: hidden;
+    border-radius: 4px;
+    transition: ease-in-out background-color 300ms;
+
+}
+
+.config-header::-webkit-scrollbar-thumb {
+   
+    background-color: rgba(255, 255, 255, 0.185);
+    border-radius: 4px;
+    opacity: 0;
+    transition: ease-in-out background-color 300ms;
+}
+
+.config-header::-webkit-scrollbar-thumb:hover {
+    visibility: visible;
+    background-color: rgba(255, 255, 255, 0.322);
+}
+.config-header::-webkit-scrollbar:hover {
+    visibility: visible;
+    background-color: rgba(255, 255, 255, 0.322);
+
+}
+
+.config-content{
+    display: flex;
+    width: 100%;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.055);
+    z-index: 0;
+    padding: 12px 14px;
+    flex-direction: column;
+    gap: 4px;
+    max-height: 100%;
+    overflow: auto;
+}
+
+.page-title {
+    z-index: 1;
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+    width: 100%;
+    justify-content: space-between; /* Alinha os elementos filhos nas extremidades */
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.config-content .page-content{
+    width: 100%;
+    max-width: 100%;
+    overflow: auto; 
+    padding: 0px 10px;
+}
+.config-content .page-content::-webkit-scrollbar {
+    width:10px;
+    background-color: rgba(255, 255, 255, 0);
+    visibility: hidden;
+    border-radius: 4px;
+    transition: ease-in-out background-color 300ms;
+}
+
+.config-content .page-content::-webkit-scrollbar-thumb {
+   
+    background-color: rgba(255, 255, 255, 0.055);
+    border-radius: 4px;
+    opacity: 0;
+    transition: ease-in-out background-color 300ms;
+}
+
+.config-content .page-content::-webkit-scrollbar-thumb:hover {
+    visibility: visible;
+    background-color: rgba(255, 255, 255, 0.322);
+}
+.config-content .page-content::-webkit-scrollbar:hover {
+    visibility: visible;
+    background-color: rgba(255, 255, 255, 0.322);
+ 
+}
+
+.filter-inputs {
+    display: inline-flex;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.underlined {
+/*   background: red; */
+  position: relative;
+  text-shadow: 2px 2px 2px rgb(92, 171, 241);
+}
+.title-especialidade {
+    font-size: 6.5vh;
+}
+
+.title-simple {
+    text-shadow: 2px 2px 2px rgb(9, 14, 18);
+}

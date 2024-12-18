@@ -1,0 +1,37 @@
+.tab-selector-container-cr {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0.1%;
+}
+
+.tab-item-cr {
+    background: linear-gradient(90deg, var(--color-chamado-selector), var(--color-dark-chamado-selector));
+    font-weight: 600;
+    font-size: 3vh;
+    padding: 3vh 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 100%;
+    transition: ease-in-out background-color 300ms, ease-in-out box-shadow 300ms;
+}
+
+.tab-item-cr:hover {
+    background: var(--color-dark-chamado-selector);
+    box-shadow: 2px -5px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.tab-selector-container-cr .tab-item-cr.active {
+    background: linear-gradient(180deg, var(--color-neutral-darkest), var(--color-chamado-selector-strong));
+    box-shadow: 2px -5px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.no-reply {
+    background: linear-gradient(270deg, #AFACB2, #444446);
+    box-shadow: 2px -5px 10px 0px rgba(0, 0, 0, 0.15);
+}

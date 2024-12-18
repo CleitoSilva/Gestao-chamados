@@ -1,0 +1,85 @@
+.user-table-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    overflow: auto;
+    padding-right: 5px;
+    padding: 0 40px;
+    margin: 0 -40px;
+}
+
+.user-table-wrapper::-webkit-scrollbar {
+    background-color: #0000005b;
+    width: 5px;
+}
+
+.user-table-wrapper::-webkit-scrollbar-thumb {
+    background-color: #ffffff49;
+}
+
+table.users-table {
+    border-collapse: separate;
+    border-spacing: 0 .5rem;
+    width: 100%;
+}
+
+table.users-table td,
+table.users-table th {
+    padding: 4px;
+}
+
+table.users-table thead th {
+    padding: 16px 8px;
+    text-align: left;
+    background-color:rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+table.users-table tbody tr>* {
+    padding: 8px;
+    text-align: left;
+    background-color:rgba(0, 0, 0, 0.2);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+table.users-table thead th:first-child {
+    border-top-left-radius: 8px;
+}
+
+table.users-table thead th:last-child {
+    border-top-right-radius: 8px;
+    text-align: center;
+}
+
+table.users-table button {
+    font-size: 16px;
+    color: white;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 1rem;
+    text-align: center;
+}
+
+table.users-table button.trash {
+    color: var(--color-delete-users);
+}
+
+table.users-table button:hover {
+    opacity: 0.8;
+}
+
+table.users-table tbody td:last-child {
+    text-align: center;
+}
+
+table.users-table tbody td.action-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,81 @@
+.lines_config-table{
+    width: 100%;
+    max-width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 .5rem;
+    overflow: auto;   
+}
+
+.lines_config-table .config-table-head tr{
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.lines_config-table .config-table-head{
+    width: 100%;
+}
+
+.lines_config-table .config-table-head th{
+    font-size: 24px;
+    font-weight: 600;
+    flex-direction: row;
+    flex: 1;
+    padding: 16px 8px;
+    text-align: flex-start;    
+}
+
+.lines_config-table .config-table-head th.status-table-data p{
+    text-align: center;    
+}
+
+.lines_config-table .config-table-head th p{
+    text-align: left;
+}
+
+.lines_config-table .config-table-head th:last-child {
+    border-top-right-radius: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.lines_config-table .config-table-head th:first-child {
+    border-top-left-radius: 8px;
+}
+
+.lines_config-table .config-table-body{
+    flex-direction: column;
+    gap: 16px;
+}
+
+.lines_config-table .config-table-body tr {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.lines_config-table .config-table-body tr td{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px;
+    align-items: center;
+    max-width: 200px;
+    
+    vertical-align: middle;
+}
+.lines_config-table .config-table-body tr td.status-table-data{
+    text-align: center;
+}
+
+.lines_config-table .config-table-body tr td p{
+    max-width: 100%;
+    text-align: start;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+}
+
+.lines_config-table .config-table-body tr td:last-child{
+    justify-content:center;
+    display: flex;
+    max-width: 100%;
+    gap: 16px;
+}

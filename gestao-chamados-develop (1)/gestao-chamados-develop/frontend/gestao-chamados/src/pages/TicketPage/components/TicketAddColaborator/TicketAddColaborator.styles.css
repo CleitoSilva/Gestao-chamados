@@ -1,0 +1,109 @@
+:root {
+  --add-colaborator: #005EFF;
+  --border-search-div-colaborator: #c9c9c9;
+  --color-search-colaborator: #5a5a5a;
+}
+
+section.ticket-add-colaborator-container button.adding {
+  background: #005EFF;
+}
+
+section.ticket-add-colaborator-container button.adding .tech-icon-add {
+  width: 28px;
+  height: 28px;
+}
+
+section.ticket-add-colaborator-container article.ticket-add-colaborator-content {
+  background: white;
+  padding: .5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+section.ticket-add-colaborator-container article.ticket-add-colaborator-content div.ticket-add-colaborator-select-area {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+section.ticket-add-colaborator-container article.ticket-add-colaborator-content div.ticket-add-search {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  border-radius: 8px;
+  border-bottom: 2px solid var(--border-search-div-colaborator);
+}
+
+section.ticket-add-colaborator-container article.ticket-add-colaborator-content div.ticket-add-search button {
+  border: none;
+  background: none;
+  font-size: 18px;
+  color: var(--color-search-colaborator);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: .5rem;
+}
+
+section.ticket-add-colaborator-container article.ticket-add-colaborator-content div.ticket-add-search input {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+}
+
+section.ticket-add-colaborator-container article.ticket-add-colaborator-content ul.ticket-add-colaborators-list {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: .5rem;
+
+  max-height: 28vh;
+  height: 28vh;
+
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+section.ticket-add-colaborator-container article.ticket-add-colaborator-content ul.ticket-add-colaborators-list li {
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+section.ticket-add-colaborator-container article.ticket-add-colaborator-content ul.ticket-add-colaborators-list li span {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+section.ticket-add-colaborator-container article.ticket-add-colaborator-content ul.ticket-add-colaborators-list li span h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+section.ticket-add-colaborator-container article.ticket-add-colaborator-content ul.ticket-add-colaborators-list li span p {
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+  background: var(--bg-tech-indicator);
+  padding: 5px;
+  border-radius: 4px;
+}
+
+section.ticket-add-colaborator-container article.ticket-add-colaborator-content ul.ticket-add-colaborators-list li.selected {
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+section.ticket-add-colaborator-container article.ticket-add-colaborator-content ul.ticket-add-colaborators-list li:not(.selected):hover {
+  background: rgba(0, 0, 0, 0.05);
+}

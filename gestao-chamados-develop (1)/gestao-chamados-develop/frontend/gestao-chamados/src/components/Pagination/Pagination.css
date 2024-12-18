@@ -1,0 +1,63 @@
+  nav.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav.pagination ul.pagination {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+  }
+  
+  nav.pagination ul.pagination li.link-item {
+    font-size: 20px;
+    color: white;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav.pagination ul.pagination li.link-item.pointer {
+    cursor: pointer;
+  }
+  
+  nav.pagination ul.pagination li.link-item.pointer:hover {
+    opacity: 0.8;
+  }
+  
+  nav.pagination ul.pagination li.link-item.pointer:hover span.link-item-text {
+    background-color:rgb(255, 255, 255) ;
+    
+  }
+  
+  nav.pagination ul.pagination li.link-item.disable {
+    opacity: 0.5;
+  }
+  
+  nav.pagination ul.pagination li.link-item span.link-item-text {
+    font-size: 20px;
+    font-weight: 600;
+    background: rgb(206, 206, 206);
+    color: black;
+    padding: 10px 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out background-color 300ms;
+  } 
+  
+  nav.pagination ul.pagination li.link-item.active span.link-item-text {
+    font-size: 20px;
+    font-weight: 700;
+    background: var(--color-feedback-info-light);
+    color: white;
+    box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.247);
+    transition: ease-in-out background-color 300ms;
+  }

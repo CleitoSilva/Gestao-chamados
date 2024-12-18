@@ -1,0 +1,51 @@
+:root {
+  --button-ticket-default: #005EFF;
+}
+
+button.ticket-button-default {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  justify-content: flex-start;
+  padding: .5rem;
+  padding-right: 1rem;
+
+  border-radius: 8px;
+  border: 2px solid var(--button-ticket-default);
+  background: white;
+
+  cursor: pointer;
+}
+
+button.ticket-button-default:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+button.ticket-button-default:not(:disabled):hover {
+  background: var(--button-ticket-default);
+  /* border-color: white; */
+}
+
+button.ticket-button-default:not(:disabled):hover .button-default-icon path {
+  fill: white;
+}
+
+button.ticket-button-default:not(:disabled):hover p {
+  color: white;
+}
+
+button.ticket-button-default .button-default-icon {
+  width: 24px;
+  height: 24px;
+}
+
+button.ticket-button-default .button-default-icon path {
+  fill: var(--button-ticket-default);
+}
+
+button.ticket-button-default p {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--button-ticket-default);
+}

@@ -1,0 +1,66 @@
+.select-container-component{
+    outline: none;
+    width: 100%;
+    border-radius: 4px;
+    flex-direction: column;
+    color: #ccc5c5;
+    font-weight: 600;
+    position: relative;
+    gap: 4px;
+    display: flex;
+
+}
+
+.select-container-component label{
+    font-size: 16px ;
+}
+
+.select-container-component .select-input{
+    appearance: none;
+    outline: none;
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    padding: 10px; 
+    rotate: 0deg;
+    font-size: 12px;
+    border: 1px solid #ccc5c5;
+    background: linear-gradient(0deg, #182E7B27, #15d4ff36 80%);
+    color: #ccc5c5;
+    font-weight: 600;
+    cursor: pointer;
+    transition: ease-in-out color 300ms, ease-in-out border-color 300ms;
+}
+
+.select-container-component .select-input:disabled{
+    border: 1px solid #396ef593;
+    background: linear-gradient(0deg, #182E7B27, #15d4ff36 80%);
+    color: #396ef593;
+    cursor: auto;
+}
+.select-container-component .select-input:disabled:hover{
+    border: 1px solid #396ef593;
+    background: linear-gradient(0deg, #182E7B27, #15d4ff36 80%);
+    color: #396ef593;
+    cursor: auto;
+}
+
+.select-container-component .select-input:hover{
+ color: #b8b8b8;
+ border: 1px solid #b8b8b8;
+}
+
+.select-container-component .select-icon{
+   position: absolute;
+   bottom: 4px;
+   right: 10px;
+}
+
+.select-container-component .select-input:focus + .select-icon{
+   rotate: 180deg;
+}
+
+.select-container-component .select-input:active + .select-icon{
+   rotate: 180deg;
+}

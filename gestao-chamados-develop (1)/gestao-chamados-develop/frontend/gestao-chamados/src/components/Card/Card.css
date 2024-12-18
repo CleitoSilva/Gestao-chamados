@@ -1,0 +1,13 @@
+.card{
+    display: flex;
+    width: 301px;
+    height: 294px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-radius: 16px;
+    background: linear-gradient(225deg, #1400FF 2.08%, rgba(149, 140, 255, 0.00) 100%);
+
+}

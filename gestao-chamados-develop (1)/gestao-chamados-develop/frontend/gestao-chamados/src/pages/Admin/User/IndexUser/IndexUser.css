@@ -1,0 +1,39 @@
+:root {
+    --bg-header-table-users: #1F1F23;
+    --bg-body-table-users: #2f2f35;
+    --bg-plus-button-users: #2342AD;
+    --bg-refresh-button-users: #1c379b;
+    --bg-plus-button-users-active: #0D2371;
+    --bg-plus-button-users-hover: #163ECA;
+    --bg-refresh-button-users-hover: #233fa8;
+    --color-delete-users: #FF3535;
+}
+
+article.users-index-container {
+    display: flex;
+    align-self: stretch;
+    flex: 1;
+    flex-direction: column;
+    gap: 0.5rem;
+    overflow: hidden;
+}
+
+header.users-index-header {
+    background: var(--bg-header-manage-params);
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header.users-index-header h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+header.users-index-header div.actions-users {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

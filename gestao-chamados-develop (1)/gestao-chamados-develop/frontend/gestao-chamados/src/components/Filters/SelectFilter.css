@@ -1,0 +1,36 @@
+.input-block {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+.form-control {
+    background: linear-gradient(0deg, #182E7B27, #15d4ff36 80%);    
+    border-radius: 8px;
+    padding: 2vh;
+    border: solid 0.01vh white;
+    box-shadow: none;
+    height: 5vh;
+    width: 15vw;
+    position: relative;
+    z-index: 2;
+    font-size: 2vh;
+    color: white;
+}
+
+.form-control option {
+    color: black;
+    background: linear-gradient(0deg, #182E7B27, #15d4ff36 80%);    
+}
+
+.title-input {
+    font-size: 2vh;
+}
+
+.form-control:focus {
+    label {
+        top: 0;
+    }
+}

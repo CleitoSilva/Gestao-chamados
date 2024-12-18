@@ -1,0 +1,28 @@
+.tab-selector-container {
+    display: flex;
+    gap: 1vw;
+}
+
+.tab-selector-container .tab-item {
+    font-weight: 600;
+    font-size: 3vh;
+    padding: 3vh 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap; /* Adicionado para garantir que o texto não quebre */;
+    transition: ease-in-out background-color 300ms, ease-in-out box-shadow 300ms;
+}
+
+.tab-selector-container .tab-item:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+    box-shadow: 2px -5px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.tab-selector-container .tab-item.active {
+    background-color: rgba(255, 255, 255, 0.06);
+    box-shadow: 2px -5px 10px 0px rgba(0, 0, 0, 0.15);
+}

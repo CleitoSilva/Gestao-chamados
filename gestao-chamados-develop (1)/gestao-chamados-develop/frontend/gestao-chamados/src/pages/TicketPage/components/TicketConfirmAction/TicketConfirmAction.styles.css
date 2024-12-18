@@ -1,0 +1,185 @@
+:root {
+  --form-ticket-confirm: #005EFF;
+  --hover-form-ticket-confirm: #0055e7;
+
+  --bg-button-cancel: #cfcfcf;
+  --hover-bg-button-cancel: #bbbbbb;
+  --color-cancel: #727272;
+
+  --bg-colaborator-indicator: #afafaf;
+  --bg-colaborator-i: #8b8b8b;
+  --color-colaborator-i: #ececec;
+}
+
+
+form.ticket-confirm-action {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  align-items: flex-start;
+  justify-content: center;
+
+  width: 100%;
+}
+
+form.ticket-confirm-action p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+form.ticket-confirm-action p strong {
+  font-weight: 600;
+}
+
+form.ticket-confirm-action input {
+  width: 100%;
+  border: 2px solid var(--form-ticket-confirm);
+  border-radius: 8px;
+  padding: .5rem;
+
+  outline: none;
+}
+
+form.ticket-confirm-action input:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+form.ticket-confirm-action button[type="submit"] {
+  width: 100%;
+  background: var(--form-ticket-confirm);
+  padding: .75rem;
+  border: none;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+
+  cursor: pointer;
+
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+form.ticket-confirm-action button[type="submit"]:hover {
+  background: var(--hover-form-ticket-confirm);
+  color: white;
+}
+
+form.ticket-confirm-action button[type="button"] {
+  width: 100%;
+  background: var(--bg-button-cancel);
+  padding: .5rem;
+  border: none;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-cancel);
+
+  cursor: pointer;
+}
+
+form.ticket-confirm-action button[type="button"]:hover {
+  background: var(--hover-bg-button-cancel);
+  color: black;
+}
+
+form.ticket-confirm-action button.identify {
+  width: 100%;
+  background: var(--form-ticket-confirm);
+  padding: .75rem;
+  border: none;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+
+  cursor: pointer;
+
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+form.ticket-confirm-action button.identify:hover {
+  background: var(--hover-form-ticket-confirm);
+  color: white;
+}
+
+form.ticket-confirm-action div.colaborator-indicator {
+  background: var(--bg-colaborator-indicator);
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  border-radius: 8px;
+  padding: .75rem 1rem;
+}
+
+form.ticket-confirm-action div.colaborator-indicator div.colaborator-info {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+form.ticket-confirm-action div.colaborator-indicator div.colaborator-info i {
+  background: var(--bg-colaborator-i);
+  padding: .5rem;
+  border-radius: 8px;
+
+  color: var(--color-colaborator-i);
+}
+
+form.ticket-confirm-action div.colaborator-indicator div.colaborator-info span {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: .2rem;
+}
+
+form.ticket-confirm-action div.colaborator-indicator div.colaborator-info span h3 {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+form.ticket-confirm-action div.colaborator-indicator div.colaborator-info span h5 {
+  color: var(--color-colaborator-i);
+  font-size: 10px;
+  font-weight: 600;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+form.ticket-confirm-action div.colaborator-indicator button.change-identify {
+  width: fit-content;
+  background: none;
+  color: black;
+  font-size: 20px;
+  padding: .4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form.ticket-confirm-action div.colaborator-indicator button.change-identify:hover {
+  background: var(--bg-colaborator-i);
+}

@@ -1,0 +1,69 @@
+ul.ticket-technique-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+  height: 36vh;
+  max-height: 36vh;
+
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+ul.ticket-technique-list li.ticket-technique-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: .5rem 1rem;
+
+  border-radius: 16px;
+  border: 2px solid rgba(0, 0, 0, 0.1)
+}
+
+ul.ticket-technique-list li.ticket-technique-item span {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+ul.ticket-technique-list li.ticket-technique-item span h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+ul.ticket-technique-list li.ticket-technique-item span p {
+  font-size: 8px;
+  font-weight: 600;
+  color: white;
+  background: black;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+ul.ticket-technique-list li.ticket-technique-item button {
+  border: none;
+  background: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+ul.ticket-technique-list li.ticket-technique-item button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+ul.ticket-technique-list li.ticket-technique-item button:not(:disabled):hover {
+  opacity: .8;
+}
+
+ul.ticket-technique-list li.ticket-technique-item button > * {
+  width: 20px;
+  height: 20px;
+}

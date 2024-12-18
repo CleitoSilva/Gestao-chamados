@@ -1,0 +1,40 @@
+div.menu-list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  max-height: 100%;
+}
+
+div.menu-list-items h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+div.menu-list-items ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 100%;
+  max-height: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: #ede2ff36 #00000010;
+  overflow: auto;
+}
+
+div.menu-list-items ul::-webkit-scrollbar {
+  background-color: #00000010;
+  width: 5px;
+}
+
+div.menu-list-items ul::-webkit-scrollbar-thumb{
+  background-color: #ede2ff36;
+}
+
+div.menu-list-items ul::-webkit-scrollbar-track {
+  position: absolute;
+}

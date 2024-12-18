@@ -1,0 +1,235 @@
+:root {
+  --bg-menu:  rgba(255,255,255, 0.1);
+  --base-line: radial-gradient(2999.80% 74.38% at 50.21% 48.65%, #FFF 0%, rgba(251, 251, 251, 0.00) 100%);
+  --collapse-hover: #ffffff65;
+}
+
+nav.menu {
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 10px 15px;
+  align-items: center;
+}
+
+/* nav.menu + section { */
+  /* margin-left: 18rem; */
+/* } */
+
+/* nav.menu ~ footer {
+  margin-left: 18rem;
+} */
+
+nav.menu section {
+  position: relative;
+  width: 80px;
+  height: 100%;
+  max-height: 100%;
+  background: var(--bg-menu);
+  border-radius: 2px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+}
+
+nav.menu section::-webkit-scrollbar {
+  background-color: #00000010;
+  width: 5px;
+}
+
+nav.menu section::-webkit-scrollbar-thumb{
+  background-color: #ede2ff36;
+}
+
+nav.menu section::-webkit-scrollbar-track {
+  position: absolute;
+}
+
+nav.menu section article {
+  height: 100%;
+  max-height: 90%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+nav.menu div.menu-branding {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav.menu div.menu-branding > * {
+  color: white;
+  border-radius: 4px;
+  border: 1px solid white;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+nav.menu div.menu-branding button {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px 15px;
+  background: none;
+  justify-content: center;
+  cursor: pointer;
+}
+
+nav.menu div.menu-branding button:hover {
+  background: var(--collapse-hover);
+}
+
+nav.menu div.menu-branding p {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px;
+  width: 100%;
+}
+
+/* nav.menu div.menu-branding span.indicator {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: white;
+  border-radius: 4px;
+  color: black;
+} */
+
+/* nav.menu div.menu-branding::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 2px; 
+  background: var(--base-line);
+} */
+  
+nav.menu.collapse {
+  width: 6rem;
+}
+
+/* nav.menu.collapse + section {
+  margin-left: 6rem;
+} */
+
+nav.menu.collapse ~ footer {
+  margin-left: 6rem;
+}
+
+nav.menu.collapse section {
+  padding: 20px 6px;
+}
+
+nav.menu.collapse div.menu-branding button {
+  width: 100%;
+}
+
+nav.menu.collapse div.menu-branding p {
+  display: none;
+}
+
+nav.menu span.menu-brand-logo {
+  transform: scale(0.8);
+  margin-bottom: -15px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
+
+nav.menu span.menu-brand-logo div.logos {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+nav.menu span.menu-brand-logo img {
+  object-fit: cover;
+}
+
+nav.menu span.menu-brand-logo div.logos img.rxct {
+  width: 100%;
+}
+
+/* nav.menu span.menu-brand-logo div.logos::before {
+  content: "";
+  position: absolute;
+  top: 80%;
+  width: 10px;
+  height: 1px;
+  background: white;
+} */
+
+nav.menu span.menu-brand-logo div.open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+nav.menu span.menu-brand-logo div.open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+}
+
+nav.menu span.menu-brand-logo div.open img {
+  width: 50%;
+  object-fit: contain;
+}
+
+nav.menu span.menu-brand-logo div.open img.rxct {
+  width: 30% !important;
+}
+
+nav.menu span.menu-brand-logo div.open::before {
+  content: "";
+  position: absolute;
+  left: 55%;
+  background: white;
+  width: 1px;
+  height: 10px;
+}
+
+nav.menu span.menu-brand-logo div.open span {
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+}
+
+@media (max-height: 650px) {
+
+  nav.menu section article {
+    max-height: 100%;
+  }
+  
+  nav.menu.collapse span.menu-brand-logo {
+    display: none;
+  }
+}
+
+@media (max-height: 510px) {
+  nav.menu span.menu-brand-logo {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  nav.menu {
+    display: none;
+  }
+}

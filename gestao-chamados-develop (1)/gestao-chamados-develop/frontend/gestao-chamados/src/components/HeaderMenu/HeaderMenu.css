@@ -1,0 +1,200 @@
+:root {
+  --bg-menu: linear-gradient(135deg, #5A0549 0%, #0F1B8B 99.90%);
+  --base-line: radial-gradient(2999.80% 74.38% at 50.21% 48.65%, #FFF 0%, rgba(251, 251, 251, 0.00) 100%);
+
+  --collapse-hover: #ffffff65;
+}
+
+nav.menu-header {
+  /* position: fixed; */
+  /* top: 50px; */
+  /* left: 0;
+  bottom: 0; */
+
+  width: 100%;
+  padding: 10px;
+  height: 100%;
+
+  display: flex;
+}
+
+nav.menu-header section {
+  position: relative;
+  
+  padding: 20px 15px;
+  
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+
+  background: var(--bg-menu);
+
+  border-radius: 8px;
+
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  overflow: hidden;
+}
+
+nav.menu-header section article {
+  height: 100%;
+  max-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+nav.menu-header div.menu-branding {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav.menu-header div.menu-branding > * {
+  color: white;
+  border-radius: 4px;
+  border: 1px solid white;
+  height: 2.5rem;
+  
+  display: flex;
+  align-items: center;
+}
+
+nav.menu-header div.menu-branding button {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px 15px;
+  background: none;
+
+  justify-content: center;
+  
+  cursor: pointer;
+}
+
+nav.menu-header div.menu-branding button:hover {
+  background: var(--collapse-hover);
+}
+
+nav.menu-header div.menu-branding p {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px;
+  width: 100%;
+}
+
+/* nav.menu-header div.menu-branding span.indicator {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: white;
+  border-radius: 4px;
+  color: black;
+} */
+
+/* nav.menu-header div.menu-branding::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 2px; 
+  background: var(--base-line);
+} */
+  
+nav.menu-header.collapse {
+  width: 6rem;
+}
+
+/* nav.menu-header.collapse + section {
+  margin-left: 6rem;
+} */
+
+nav.menu-header.collapse ~ footer {
+  margin-left: 6rem;
+}
+
+nav.menu-header.collapse section {
+  padding: 20px 10px;
+}
+
+nav.menu-header.collapse div.menu-branding button {
+  width: 100%;
+}
+
+nav.menu-header.collapse div.menu-branding p {
+  display: none;
+}
+
+nav.menu-header span.menu-brand-logo {
+  transform: scale(0.8);
+
+  margin-bottom: -15px;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+nav.menu-header span.menu-brand-logo div.open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: row;
+
+  gap: 20px;
+}
+
+nav.menu-header span.menu-brand-logo div.open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  position: relative;
+}
+
+nav.menu-header span.menu-brand-logo div.open img {
+  width: 20%;
+  object-fit: contain;
+}
+
+nav.menu-header span.menu-brand-logo div.open img.rxct {
+  width: 20% !important;
+}
+
+nav.menu-header span.menu-brand-logo div.open::before {
+  content: "";
+  position: absolute;
+
+  left: 48%;
+  background: white;
+  width: 1px;
+  height: 10px;
+}
+
+nav.menu-header span.menu-brand-logo div.open span {
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+}
+
+@media (max-height: 500px) {
+  nav.menu-header span.menu-brand-logo {
+    display: none;
+  }
+}

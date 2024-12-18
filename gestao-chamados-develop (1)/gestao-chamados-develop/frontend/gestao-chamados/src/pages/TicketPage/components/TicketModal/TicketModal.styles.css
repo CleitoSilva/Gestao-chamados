@@ -1,0 +1,67 @@
+main.ticket-modal-container {
+  position: fixed;
+  inset: 0;
+}
+
+main.ticket-modal-container section.ticket-modal-content {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+}
+
+main.ticket-modal-container section.ticket-modal-content button.close-modal {
+  display: none;
+}
+
+@media (min-width: 1051px) {
+  main.ticket-modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: auto;
+  }
+
+  main.ticket-modal-container section.ticket-modal-content {
+    position: relative;
+    inset: unset;
+
+    width: 50vw;
+    min-width: 50vw;
+  }
+
+  main.ticket-modal-container section.ticket-modal-content > section > article {
+    padding: 1rem;
+    border-radius: 0 0 16px 16px;
+  }
+
+  main.ticket-modal-container section.ticket-modal-content button.close-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 3rem;
+    height: 3rem;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 24px;
+    background: white;
+
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+
+    cursor: pointer;
+
+    position: absolute;
+
+    top: 0;
+    left: calc(100% + 16px);
+  }
+
+  main.ticket-modal-container section.ticket-modal-content button.close-modal:hover {
+    background: rgb(240, 240, 240);
+  }
+}

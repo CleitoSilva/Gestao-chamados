@@ -1,0 +1,10 @@
+.limits_form-inputs-container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.select-colaborator{
+    display: flex;
+    justify-content: space-between;
+}
